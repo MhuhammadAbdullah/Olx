@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>OLX Clone</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100">
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo-nav">
+                <img alt="OLX logo" src="assets/olx_logo.png" class="logo" />
+                <nav class="nav-links">
+                    <a href="#">Motors</a>
+                    <a href="#">Property</a>
+                </nav>
+            </div>
+            <div class="search-actions">
+                <div class="location">
+                    <button class="btn">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="country">Pakistan</span>
+                        <i class="fas fa-chevron-down right-icon"></i>
+                    </button>
+                </div>
+
+                <div class="search-box">
+                    <input type="text" placeholder="Find Cars, Mobile Phones and more..." class="search-input" />
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="actions">
+                    <img src="assets/iconChat.svg" alt="">
+                    <img src="assets/iconNotifications_noinline.4444f6b42acbe30d772d80ef1225f574.svg" alt="">
+                    <img src="assets/iconProfilePicture.png" class="ipp" alt="">
+                    <!-- <i class="fas fa-comment-dots"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-user-circle"></i> -->
+                    <button class="sell-btn">
+                        <i class="fas fa-plus"></i>
+                        <span>SELL</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="categories">
+            <a href="#" class="cate-bold">ALL CATEGORIES<i class="fas fa-chevron-down"></i></a>
+            <a href="#">Mobile Phones</a>
+            <a href="#">Cars</a>
+            <a href="#">Motorcycles</a>
+            <a href="#">Houses</a>
+            <a href="#">Video-Audios</a>
+            <a href="#">Tablets</a>
+            <a href="#">Land & Plots</a>
+        </nav>
+        <div class="featured">
+            <div class="featured-img">
+                <img alt="Featured car ad" src="assets/437508562-800x600.jpg" />
+            </div>
+        </div>
+    </main>
+    <div class="cat-head">
+        <h1>All categories</h1>
+    </div>
+    <section class="category-list-container">
+
+        <div class="list-1">
+            <a href="#" class="category">
+                <img src="assets/mobiles.png" alt="Mobiles">
+                <span>Mobiles</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/vehicles.png" alt="Vehicles">
+                <span>Vehicles</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/property.png" alt="Property for Sale">
+                <span>Property for Sale</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/property-for-rent.png" alt="Property for Rent">
+                <span>Property for Rent</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/electronics.png" alt="Electronics &amp; Home Appliances">
+                <span>Electronics &amp;</span>
+                <span>Home Appliances</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/bikes.png" alt="Bikes">
+                <span>Bikes</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/business-industrial-agriculture.png" alt="Business, Industrial &amp; Agriculture">
+                <span>Business, Industrial</span>
+                <span>&amp; Agriculture</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/services.png" alt="Services">
+                <span>Services</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/jobs.png" alt="Jobs">
+                <span>Jobs</span>
+            </a>
+        </div>
+        <div class="list-2">
+            <a href="#" class="category">
+                <img src="assets/animals.png" alt="Animals">
+                <span>Animals</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/furniture.png" alt="Furniture &amp; Home Decor">
+                <span>Furniture &amp;</span>
+                <span> Home Decor</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/fashion.png" alt="Fashion &amp; Beauty">
+                <span>Fashion &amp;</span>
+                <span>Beauty</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/books.png" alt="Books, Sports &amp; Hobbies">
+                <span>Books, Sports</span>
+                <span>&amp; Hobbies</span>
+            </a>
+            <a href="#" class="category">
+                <img src="assets/kids.png" alt="Kids">
+                <span>Kids</span>
+            </a>
+        </div>
+    </section>
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="card-section">
+        <!-- <h1 style="text-align: center; margin: 20px 0;">OLX Style Product Cards</h1> -->
+        <div class="card-container" id="productCards"></div>
+
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <div>
+                    <p>POPULAR CATEGORIES</p>
+                    <ul>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Flats for rent</a></li>
+                        <li><a href="#">Mobile Phones</a></li>
+                        <li><a href="#">Jobs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>TRENDING SEARCHES</p>
+                    <ul>
+                        <li><a href="#">Bikes</a></li>
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Dogs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>ABOUT US</p>
+                    <ul>
+                        <li><a href="#">About Dubizzle Group</a></li>
+                        <li><a href="#">OLX Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">OLX for Businesses</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>OLX</p>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p>FOLLOW US</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="app-buttons">
+                        <a href="#"><img
+                                src="assets/app-store.svg"
+                                alt="App Store" /></a>
+                        <a href="#"><img
+                                src="assets/google-play.svg"
+                                alt="Google Play" /></a>
+                        <a href="#"><img
+                                src="assets/app.svg"
+                                alt="AppGallery" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Free Classifieds in Pakistan . © 2006-2024 OLX</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
